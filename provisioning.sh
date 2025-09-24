@@ -1,5 +1,6 @@
 #!/bin/bash
-set -e  # Exit on error
+
+set -eo pipefail  # Exit on error
 
 echo "========================================="
 echo "Starting custom provisioning..."
@@ -22,7 +23,6 @@ else
     cd myosuite
     git pull
 fi
-
 # Install Python package in editable mode
 echo "Installing Python package..."
 pip install -e .
