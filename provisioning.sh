@@ -14,11 +14,16 @@ sudo apt-get update && sudo apt-get install -y git
 # Clone your repository
 echo "Cloning repository..."
 cd /workspace
+echo "Current directory after cd command: $(pwd)"
+
 
 # Replace with your actual repo URL
 if [ ! -d "myrepo" ]; then
+    echo "Before Starting cloning"
     git clone https://github.com/ankit-bhattarai/myosuite.git
+    echo "Cloning complete"
     cd myosuite
+    echo "Changed into folder myosuite"
 else
     echo "Repository already exists, pulling latest..."
     cd myosuite
