@@ -8,8 +8,9 @@ echo "========================================="
 
 # Update and install git
 echo "Installing git..."
-apt-get update && apt-get install -y git
+sudo apt-get update && sudo apt-get install -y git
 
+. /venv/main/bin/activate
 # Clone your repository
 echo "Cloning repository..."
 cd /workspace
@@ -33,3 +34,5 @@ pip install -e .
 echo "========================================="
 echo "Custom provisioning completed successfully!"
 echo "========================================="
+
+supervisorctl reload
