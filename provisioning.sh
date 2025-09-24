@@ -40,4 +40,4 @@ echo "========================================="
 echo "Custom provisioning completed successfully!"
 echo "========================================="
 
-supervisorctl reload
+python -c "import myosuite"
