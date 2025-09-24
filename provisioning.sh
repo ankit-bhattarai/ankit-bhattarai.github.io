@@ -17,7 +17,7 @@ cd /workspace
 
 # Replace with your actual repo URL
 if [ ! -d "myrepo" ]; then
-    git clone https://github.com/ankit-bhattarai/myosuite
+    git clone https://github.com/ankit-bhattarai/myosuite.git
     cd myosuite
 else
     echo "Repository already exists, pulling latest..."
