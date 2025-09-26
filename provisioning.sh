@@ -41,3 +41,4 @@ echo "Custom provisioning completed successfully!"
 echo "========================================="
 
 python -c "import myosuite"
+conda install -c conda-forge libegl-devel -y
