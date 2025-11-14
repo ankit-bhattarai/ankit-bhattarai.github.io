@@ -11,6 +11,11 @@ echo "Installing git..."
 sudo apt-get update && sudo apt-get install -y git
 
 . /venv/main/bin/activate
+
+echo "Installing Python 3.11"
+conda install python=3.11
+echo "Installation complete"
+
 # Clone your repository
 echo "Cloning repository..."
 cd /workspace
