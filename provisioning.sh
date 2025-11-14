@@ -13,7 +13,7 @@ sudo apt-get update && sudo apt-get install -y git
 . /venv/main/bin/activate
 
 echo "Installing Python 3.11"
-conda install python=3.11
+conda install python=3.11 -y
 echo "Installation complete"
 
 # Clone your repository
